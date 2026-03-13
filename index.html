@@ -12,11 +12,12 @@
 <div id="webcam-container"></div>
 <div id="label-container"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image"></script>
 
 <script>
-const URL = "./my_model/";
+
+const URL = "my_model/";
 
 let model, webcam, labelContainer, maxPredictions;
 
@@ -64,6 +65,7 @@ async function predict() {
         labelContainer.childNodes[i].innerHTML = classPrediction;
     }
 }
+
 </script>
 
 </body>
